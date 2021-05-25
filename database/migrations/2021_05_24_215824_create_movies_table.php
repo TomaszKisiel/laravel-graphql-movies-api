@@ -15,11 +15,15 @@ class CreateMoviesTable extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('genre_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('director_id')
+                ->nullable()
+                ->constrained()
+                ->cascadeOnDelete()
+                ->cascadeOnUpdate();
             $table->string('title');
             $table->string('description');
             $table->integer('duration');
-            $table->datetime('released_at'); 
+            $table->datetime('released_at');
             $table->timestamps();
         });
     }

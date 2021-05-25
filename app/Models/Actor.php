@@ -5,7 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Actor extends Model
-{
+class Actor extends Model {
+
     use HasFactory;
+
+    public function movies() {
+        return $this->belongsToMany( Movie::class, 'roles' )
+            ->as('role')
+            ->withPivot(['title'])
+            ->using( Role::class )
+            ->withTimestamps();
+    }
+
+    public function roles() {
+        return $this->hasMany( Role::class );
+    }
 }

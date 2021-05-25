@@ -1,0 +1,23 @@
+CREATE DATABASE laravel_testing;
+CREATE DATABASE laravel_testing_test_1;
+CREATE DATABASE laravel_testing_test_2;
+CREATE DATABASE laravel_testing_test_3;
+CREATE DATABASE laravel_testing_test_4;
+CREATE DATABASE laravel_testing_test_5;
+CREATE DATABASE laravel_testing_test_6;
+CREATE DATABASE laravel_testing_test_7;
+CREATE DATABASE laravel_testing_test_8;
+CREATE DATABASE laravel_testing_test_9;
+CREATE DATABASE laravel_testing_test_10;
+
+GRANT ALL PRIVILEGES ON `laravel_testing`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_1`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_2`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_3`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_4`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_5`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_6`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_7`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_8`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_9`.* TO `sail`@`%`;
+GRANT ALL PRIVILEGES ON `laravel_testing_test_10`.* TO `sail`@`%`;

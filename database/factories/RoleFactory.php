@@ -1,17 +1,18 @@
 <?php
 
+
 namespace Database\Factories;
 
-use App\Models\Director;
+
+use App\Models\Role;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class DirectorFactory extends Factory {
-
+class RoleFactory extends Factory {
     /**
      * The name of the factory's corresponding model.
      * @var string
      */
-    protected $model = Director::class;
+    protected $model = Role::class;
 
     /**
      * Define the model's default state.
@@ -19,8 +20,7 @@ class DirectorFactory extends Factory {
      */
     public function definition() {
         return [
-            'first_name' => $this->faker->firstName,
-            'last_name' => $this->faker->lastName,
+            'title' => $this->faker->words(3, true),
         ];
     }
 }
